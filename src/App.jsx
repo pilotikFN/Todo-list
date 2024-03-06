@@ -1,7 +1,6 @@
 import { useState } from "react";
 import AddTodoForm from "./AddTodoForm";
 import TodoItem from "./TodoItem";
-import Checkbox from "./UI/Checkbox";
 
 function Todos() {
    const [todos, setTodos] = useState([]);

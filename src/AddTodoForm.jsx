@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddTodoForm = ({ addTodo }) => {
+const AddTodoForm = ({ addTodo, placeholder }) => {
    const [message, setMessage] = useState("");
 
    const handleSubmit = (e) => {
@@ -21,7 +21,7 @@ const AddTodoForm = ({ addTodo }) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             type="text"
-            placeholder="Write your todo"
+            placeholder={placeholder}
             name="message"
          />
          <button className="add-btn">+</button>

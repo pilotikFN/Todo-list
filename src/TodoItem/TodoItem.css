@@ -1,0 +1,18 @@
+.todo-item {
+   padding: 20px;
+   background: #dace8a;
+   border-radius: 20px;
+   width: 350px;
+   color: #474938;
+
+   animation: anim 0.4s ease-in-out;
+
+   display: flex;
+   gap: 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.todo-item h3 {
+   width: 100%;
+}

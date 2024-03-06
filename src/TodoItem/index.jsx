@@ -1,5 +1,6 @@
 import React from "react";
-import Checkbox from "./UI/Checkbox";
+import Checkbox from "../Checkbox";
+import "./TodoItem.css";
 
 const TodoItem = ({ todo, toggleTodo }) => {
    return (
