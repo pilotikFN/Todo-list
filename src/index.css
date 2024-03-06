@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+   padding: 25px;
+   margin: 0;
+
+   color: #333;
+   background-color: #fbffda;
+   font-family: "Nunito", sans-serif;
+
+   display: flex;
+   justify-content: center;
+}
+
+/* html,
+body {
+   width: 100%;
+   height: 100%;
+} */
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+@keyframes anim {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.todos-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+input {
+   padding: 10px 14px;
+   width: 100%;
+   border: none;
+   box-shadow: 0 0 0px 1.4px rgb(175, 175, 175);
+   border-radius: 8px;
+   transition: all 0.1s ease-in;
+}
+
+input:focus-visible {
+   box-shadow: 0 0 0px 1.8px rgb(98 98 70);
+   border: none;
+   border-radius: 14px;
+   outline: none;
+}
+
+.add-btn {
+   padding: 10px 16px;
+   border: none;
+
+   background: #c99d3f;
+   border-radius: 8px;
+   font-size: 1.2rem;
+   cursor: pointer;
+
+   transition: all 0.1s ease-in;
+}
+
+.add-btn:active {
+   border-radius: 14px;
+   box-shadow: 0 0 0px 1.8px rgb(98 98 70);
+}
+
+form {
+   padding: 20px;
+   background: #dace8a;
+   border-radius: 20px;
+   width: 350px;
+
+   display: flex;
+   gap: 10px;
+   justify-content: space-between;
+}
+
+.todo-item {
+   padding: 20px;
+   background: #dace8a;
+   border-radius: 20px;
+   width: 350px;
+   color: #474938;
+   
+   animation: anim 0.4s ease-in-out;
+
+   display: flex;
+   gap: 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.todo-item h3 {
+   width: 100%;
+}
